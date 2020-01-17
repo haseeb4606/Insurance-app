@@ -2,6 +2,7 @@ package com.ahmad.services;
 
 import java.util.Random;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ahmad.dtos.CustomerDto;
@@ -11,6 +12,7 @@ import com.ahmad.repository.customerRepository;
 @Service
 public class CustomerService {
 
+	@Autowired
 	private customerRepository customerRepository;
 	
 	public void createCustomer(CustomerDto dto) {
